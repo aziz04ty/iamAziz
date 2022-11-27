@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* buat style h1 sesuai design dan ubah warna name-title */
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: ;
+    font-weight: ;
+}
+
+#name-title {
+    color: ;
+    font-family: "Patrick Hand", sans-serif;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    transition: background .5s ease;
+}
+
+nav.bg-light {
+    background-color: white!important;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    margin-left: -10px;
+}
+
+section {
+    min-height: 50vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#home-section {
+    min-height: 100vh;
+}
+
+#home-section .container .row .col-md-5{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#home-section .container .row .col-md-5 img{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#home-section .container .row .col-md-7 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#about-me, #photoworks-section {
+    background-color: #fdfdfd;
+}
+
+#about-me .row .col-md-8 {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+}
+
+#about-me .row .col-md-4 {
+    padding: 3rem;
+}
+
+#about-me .decoration-wave {
+    width: 76px;
+    height: 20px;
+    position: absolute;
+}
+
+#about-me .container .row img:nth-child(2) {
+    width: 100%;
+}
+
+#about-me .decoration-wave:first-child {
+    bottom: 80px;
+    left: 10px;
+}
+
+#about-me .decoration-wave:last-child {
+    top: 80px;
+    right: 20px;
+}
+
+#skills-section .container blockquote > p,
+#photoworks-section .container blockquote > p,
+#contact-section .row blockquote p {
+    max-width: 550px;
+    margin: 30px auto;
+}
+
+#skills-section .container .list-skills {
+    display: flex;
+    justify-content: center;
+}
+
+#skills-section .container .list-skills .item-skills img {
+    height: 72px;
+    padding: 1rem;
+}
+
+/* lengkapi style agar menjadi border sesuai design */
+hr {
+    border-bottom:  ;
+    max-width: ;
+    display: ;
+}
+
+#photoworks-section .container .row img {
+    width: 100%;
+}
+
+#photoworks-section .container .row .col-12 {
+    overflow: hidden;
+    position: relative;
+}
+
+/* tambahkan value filter brightness, transition all, transform scale */
+#photoworks-section .container .row img:hover {
+    filter: ;
+    transition: ;
+    transform: ;
+}
+
+#contact-section hr, #contact-section .row blockquote p {
+    margin-left: 0;
+}
+
+#contact-section .row img {
+    width: 100%;
+}
+
+footer {
+    background-color: #E5E5E5;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* 
+    %: percent
+    vh: view height
+    vw: view width
+    px: pixel
+    pt: point
+    rem: 
+*/
+
+@media only screen and (max-width: 768px)
+{
+    #home-section {
+        background-position: top;
+    }
+
+    #home-section .container .row .col-md-5 {
+        height: 50vh;
+        position: relative!important;
+    }
+
+    #home-section .container .row .col-md-5 img{
+        height: 100%;
+        right: 0px;
+    }
+
+    #home-section .container .row .col-md-7 {
+        min-height: auto;
+        margin-top: 50px;
+    }
+
+    #home-section .button-wrapper button {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 50px;
+    }
+
+    #about-me .container .row .col-12 img:nth-child(2) {
+        width: 100%;
+    }
+}
+
+/* own css custom */
+
+.profile{
+    border-radius: 12px;
+}
+
+.kotakan{
+    background-color: rgba(255, 48, 52, 0.75);
+    background: rgb(205,205,205);
+    background: linear-gradient(158deg, rgba(205,205,205,0) 46%, rgba(0,105,217,1) 100%, rgba(0,105,217,1) 100%);
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.gambar-skill{
+    float: left;
+    width: 80px;
+}
+
+.judul-skill{
+    margin-top: -20px;
+}
+
